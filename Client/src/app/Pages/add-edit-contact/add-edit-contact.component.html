@@ -1,0 +1,28 @@
+<div class="modal fade" id="editContactModal" tabindex="-1" aria-labelledby="editContactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+                <div class="modal-header">
+                    <h5 class="modal-title">{{(this.contact ? 'EDIT_CONTACT' :'ADD_CONTACT') |translate}}</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        (click)="closeModal()"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-3">
+                        <div class="col-md-6" *ngFor="let key of formFieldOrder">
+                            <app-input-field [formControlName]="key" [label]="formatLabel(key)"
+                                [hint]="editForm.get(key)?.errors && submitted ? getErrorMessage(key) : ''"
+                                [className]="submitted && editForm.get(key)?.errors ? 'is-invalid' : ''">
+                            </app-input-field>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" (click)="closeModal()">{{'BTN_CANCEL' |
+                        translate}}</button>
+                    <button class="btn btn-primary" type="submit">{{'BTN_SUBMIT' | translate}}</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

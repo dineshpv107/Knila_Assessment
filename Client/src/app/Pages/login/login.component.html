@@ -1,0 +1,24 @@
+<div class="container d-flex align-items-center justify-content-center">
+    <div class="card w-100" style="max-width: 400px;">
+        <div class="card-body">
+            <h4 class="card-title text-center mb-4">{{'HEADER_LOGIN' | translate}}</h4>
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <div class="mb-3">
+                    <app-input-field formControlName="username" [label]="'LABEL_USERNAME' |translate"
+                        [hint]="f['username'].errors && submitted ? ('ERROR_USER_NAME_REQUIRED' |translate) : ''"
+                        [className]="submitted && f['username'].errors ? 'is-invalid' : ''"></app-input-field>
+                </div>
+
+                <div class="mb-3">
+                    <app-input-field formControlName="password" [label]="'LABEL_PASSWORD' |translate" type="password"
+                        [hint]="f['password'].errors && submitted ? ('PASSWORD_IS_REQUIRED' |translate) : ''"
+                        [className]="submitted && f['password'].errors ? 'is-invalid' : ''"></app-input-field>
+                </div>
+
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">{{'BTN_LOGIN' | translate}}</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="mb-3">
+    <label [for]="id" class="form-label">{{ label }}</label>
+    <input [type]="type" class="form-control" [ngClass]="className" [id]="id" [value]="value"
+        (input)="updateValue($event)" />
+    <div [ngClass]="className.includes('is-invalid') ? 'invalid-feedback' : 'form-text'">
+        {{ hint }}
+    </div>
+</div>

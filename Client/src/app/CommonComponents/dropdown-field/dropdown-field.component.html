@@ -1,0 +1,12 @@
+<div>
+    <label [for]="id" class="form-label">{{ label }}</label>
+    <select class="form-select" [class.is-invalid]="isInvalid" [id]="id" [value]="value" (change)="onChange($event)">
+        <option disabled selected value="">{{ placeholder }}</option>
+        <option *ngFor="let opt of options" [value]="opt.value">
+            {{ opt.label }}
+        </option>
+    </select>
+    <div [ngClass]="isInvalid ? 'invalid-feedback' : 'form-text'" *ngIf="hint" [id]="id + '-hint'">
+        {{ hint }}
+    </div>
+</div>

@@ -1,0 +1,57 @@
+<div class="container my-4">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="mb-0">{{'TITLE_CONTACT_LIST' | translate}}</h4>
+                <button class="btn btn-primary" (click)="addContact()">{{'BTN_ADD_CONTACT' | translate}}</button>
+            </div>
+
+            <!-- Responsive Table Wrapper -->
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th *ngFor="let col of ['FirstName', 'LastName', 'Email', 'PhoneNumber', 'Address', 'City', 'State', 'Country', 'PostalCode']"
+                                (click)="sortBy(col)" style="cursor: pointer; white-space: nowrap;">
+                                {{ col | titlecase }}
+                                <span *ngIf="sortField === col">{{ sortAsc ? '▲' : '▼' }}</span>
+                            </th>
+                            <th style="white-space: nowrap;">{{'HEADER_ACTION' |translate}}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let contact of contacts; let i = index">
+                            <td>{{ contact.FirstName }}</td>
+                            <td>{{ contact.LastName }}</td>
+                            <td>{{ contact.Email }}</td>
+                            <td>{{ contact.PhoneNumber }}</td>
+                            <td>{{ contact.Address }}</td>
+                            <td>{{ contact.City }}</td>
+                            <td>{{ contact.State }}</td>
+                            <td>{{ contact.Country }}</td>
+                            <td>{{ contact.PostalCode }}</td>
+                            <td>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-sm btn-warning" (click)="editContact(contact)">{{'BTN_EDIT' |
+                                        translate}}</button>
+                                    <button class="btn btn-sm btn-danger"
+                                        (click)="openDeleteModal(contact)">{{'BTN_DELETE' | translate}}</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr *ngIf="contacts.length === 0">
+                            <td colspan="10" class="text-center text-muted">{{'NO_CONTENT' | translate}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-add-edit-contact (update)="onContactUpdated($event)"></app-add-edit-contact>
+
+<app-confirm-dialog #confirmDelete [title]="'Delete Contact'"
+    [message]="'Are you sure you want to delete ' + contactToDelete?.FirstName + ' ' + contactToDelete?.LastName + '?'"
+    [confirmText]="'Delete'" [cancelText]="'Cancel'" (confirm)="deleteContact()" (cancel)="cancelDelete()">
+</app-confirm-dialog>
