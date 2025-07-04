@@ -1,0 +1,185 @@
+2025-07-03 21:29:03.067 +05:30 [INF] User profile is available. Using 'C:\Users\hi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-03 21:29:03.655 +05:30 [INF] Now listening on: http://localhost:5001
+2025-07-03 21:29:03.887 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-03 21:29:03.887 +05:30 [INF] Hosting environment: Development
+2025-07-03 21:29:03.887 +05:30 [INF] Content root path: D:\Projects\New folder\Knila Assessment\Knila Assessment\Knila Assessment
+2025-07-03 21:29:04.309 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-07-03 21:29:04.910 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 634.8144ms
+2025-07-03 21:29:04.917 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-03 21:29:04.920 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-07-03 21:29:04.923 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 13783 application/javascript; charset=utf-8 5.2458ms
+2025-07-03 21:29:04.960 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.6543ms
+2025-07-03 21:29:05.009 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-07-03 21:29:05.021 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.0436ms
+2025-07-03 21:29:12.184 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5001/api/Contact/GetAllContacts - null null
+2025-07-03 21:29:12.192 +05:30 [INF] CORS policy execution successful.
+2025-07-03 21:29:12.199 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5001/api/Contact/GetAllContacts - 204 null null 15.0152ms
+2025-07-03 21:29:12.204 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5001/api/Contact/GetAllContacts - null null
+2025-07-03 21:29:12.206 +05:30 [INF] CORS policy execution successful.
+2025-07-03 21:29:12.210 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-07-03 21:29:15.002 +05:30 [INF] Executing endpoint 'Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment)'
+2025-07-03 21:29:15.040 +05:30 [INF] Route matched with {action = "GetAllContacts", controller = "Contact"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Knila.DAL.Models.Contact]] GetAllContacts() on controller Knila_Assessment.Controllers.ContactController (Knila Assessment).
+2025-07-03 21:29:16.044 +05:30 [INF] Executing action method Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment) - Validation state: "Valid"
+2025-07-03 21:29:21.037 +05:30 [INF] Executed DbCommand (128ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[City], [c].[Country], [c].[Email], [c].[FirstName], [c].[LastName], [c].[PhoneNumber], [c].[PostalCode], [c].[State]
+FROM [Contact] AS [c]
+ORDER BY [c].[Id] DESC
+2025-07-03 21:29:21.285 +05:30 [INF] Executed action method Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 5230.3553ms.
+2025-07-03 21:29:21.316 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Knila.DAL.Models.Contact, Knila.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-03 21:29:21.413 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5001/api/Contact/GetAllContacts - null null
+2025-07-03 21:29:21.414 +05:30 [INF] CORS policy execution successful.
+2025-07-03 21:29:21.422 +05:30 [INF] Executed action Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment) in 6371.7967ms
+2025-07-03 21:29:21.425 +05:30 [INF] Executed endpoint 'Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment)'
+2025-07-03 21:29:21.431 +05:30 [INF] Executing endpoint 'Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment)'
+2025-07-03 21:29:21.433 +05:30 [INF] Route matched with {action = "GetAllContacts", controller = "Contact"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Knila.DAL.Models.Contact]] GetAllContacts() on controller Knila_Assessment.Controllers.ContactController (Knila Assessment).
+2025-07-03 21:29:21.568 +05:30 [INF] Executing action method Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment) - Validation state: "Valid"
+2025-07-03 21:29:21.578 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5001/api/Contact/GetAllContacts - 200 null application/json; charset=utf-8 9374.0136ms
+2025-07-03 21:29:21.674 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[City], [c].[Country], [c].[Email], [c].[FirstName], [c].[LastName], [c].[PhoneNumber], [c].[PostalCode], [c].[State]
+FROM [Contact] AS [c]
+ORDER BY [c].[Id] DESC
+2025-07-03 21:29:21.676 +05:30 [INF] Executed action method Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 107.9958ms.
+2025-07-03 21:29:21.677 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Knila.DAL.Models.Contact, Knila.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-03 21:29:21.680 +05:30 [INF] Executed action Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment) in 246.8707ms
+2025-07-03 21:29:21.680 +05:30 [INF] Executed endpoint 'Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment)'
+2025-07-03 21:29:21.681 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5001/api/Contact/GetAllContacts - 200 null application/json; charset=utf-8 267.9236ms
+2025-07-03 21:29:36.401 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5001/api/Contact/AddOrUpdateContact - null null
+2025-07-03 21:29:36.401 +05:30 [INF] CORS policy execution successful.
+2025-07-03 21:29:36.402 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5001/api/Contact/AddOrUpdateContact - 204 null null 1.4858ms
+2025-07-03 21:29:36.412 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Contact/AddOrUpdateContact - application/json 213
+2025-07-03 21:29:36.412 +05:30 [INF] CORS policy execution successful.
+2025-07-03 21:29:36.424 +05:30 [INF] Executing endpoint 'Knila_Assessment.Controllers.ContactController.AddOrUpdateContact (Knila Assessment)'
+2025-07-03 21:29:36.462 +05:30 [INF] Route matched with {action = "AddOrUpdateContact", controller = "Contact"}. Executing controller action with signature System.Threading.Tasks.Task AddOrUpdateContact(Knila.DAL.Models.Contact) on controller Knila_Assessment.Controllers.ContactController (Knila Assessment).
+2025-07-03 21:29:36.695 +05:30 [INF] Executing action method Knila_Assessment.Controllers.ContactController.AddOrUpdateContact (Knila Assessment) - Validation state: "Valid"
+2025-07-03 21:29:42.386 +05:30 [INF] Executed DbCommand (271ms) [Parameters=[@p0='?' (Size = 200), @p1='?' (Size = 100), @p2='?' (Size = 100), @p3='?' (Size = 150), @p4='?' (Size = 100), @p5='?' (Size = 100), @p6='?' (Size = 20), @p7='?' (Size = 20), @p8='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Contact] ([Address], [City], [Country], [Email], [FirstName], [LastName], [PhoneNumber], [PostalCode], [State])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2025-07-03 21:29:42.469 +05:30 [INF] Executed action method Knila_Assessment.Controllers.ContactController.AddOrUpdateContact (Knila Assessment), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 5773.7409ms.
+2025-07-03 21:29:42.469 +05:30 [INF] Executed action Knila_Assessment.Controllers.ContactController.AddOrUpdateContact (Knila Assessment) in 6006.7669ms
+2025-07-03 21:29:42.469 +05:30 [INF] Executed endpoint 'Knila_Assessment.Controllers.ContactController.AddOrUpdateContact (Knila Assessment)'
+2025-07-03 21:29:42.470 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Contact/AddOrUpdateContact - 200 0 null 6057.9333ms
+2025-07-03 21:29:42.476 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5001/api/Contact/GetAllContacts - null null
+2025-07-03 21:29:42.477 +05:30 [INF] CORS policy execution successful.
+2025-07-03 21:29:42.477 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5001/api/Contact/GetAllContacts - 204 null null 0.4872ms
+2025-07-03 21:29:42.478 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5001/api/Contact/GetAllContacts - null null
+2025-07-03 21:29:42.479 +05:30 [INF] CORS policy execution successful.
+2025-07-03 21:29:42.479 +05:30 [INF] Executing endpoint 'Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment)'
+2025-07-03 21:29:42.479 +05:30 [INF] Route matched with {action = "GetAllContacts", controller = "Contact"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Knila.DAL.Models.Contact]] GetAllContacts() on controller Knila_Assessment.Controllers.ContactController (Knila Assessment).
+2025-07-03 21:29:42.492 +05:30 [INF] Executing action method Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment) - Validation state: "Valid"
+2025-07-03 21:29:42.501 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[City], [c].[Country], [c].[Email], [c].[FirstName], [c].[LastName], [c].[PhoneNumber], [c].[PostalCode], [c].[State]
+FROM [Contact] AS [c]
+ORDER BY [c].[Id] DESC
+2025-07-03 21:29:42.518 +05:30 [INF] Executed action method Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 25.3997ms.
+2025-07-03 21:29:42.518 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Knila.DAL.Models.Contact, Knila.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-03 21:29:42.518 +05:30 [INF] Executed action Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment) in 39.2687ms
+2025-07-03 21:29:42.518 +05:30 [INF] Executed endpoint 'Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment)'
+2025-07-03 21:29:42.519 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5001/api/Contact/GetAllContacts - 200 null application/json; charset=utf-8 40.3871ms
+2025-07-03 21:29:50.067 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5001/api/Contact/RemoveContacts - null null
+2025-07-03 21:29:50.067 +05:30 [INF] CORS policy execution successful.
+2025-07-03 21:29:50.068 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5001/api/Contact/RemoveContacts - 204 null null 0.7322ms
+2025-07-03 21:29:50.070 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Contact/RemoveContacts - application/json 216
+2025-07-03 21:29:50.070 +05:30 [INF] CORS policy execution successful.
+2025-07-03 21:29:50.072 +05:30 [INF] Executing endpoint 'Knila_Assessment.Controllers.ContactController.RemoveContacts (Knila Assessment)'
+2025-07-03 21:29:50.084 +05:30 [INF] Route matched with {action = "RemoveContacts", controller = "Contact"}. Executing controller action with signature System.Threading.Tasks.Task RemoveContacts(Knila.DAL.Models.Contact[]) on controller Knila_Assessment.Controllers.ContactController (Knila Assessment).
+2025-07-03 21:29:50.154 +05:30 [INF] Executing action method Knila_Assessment.Controllers.ContactController.RemoveContacts (Knila Assessment) - Validation state: "Valid"
+2025-07-03 21:29:50.245 +05:30 [INF] Executed DbCommand (42ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Contact]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-07-03 21:29:50.264 +05:30 [INF] Executed action method Knila_Assessment.Controllers.ContactController.RemoveContacts (Knila Assessment), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 110.1375ms.
+2025-07-03 21:29:50.264 +05:30 [INF] Executed action Knila_Assessment.Controllers.ContactController.RemoveContacts (Knila Assessment) in 180.2054ms
+2025-07-03 21:29:50.264 +05:30 [INF] Executed endpoint 'Knila_Assessment.Controllers.ContactController.RemoveContacts (Knila Assessment)'
+2025-07-03 21:29:50.264 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Contact/RemoveContacts - 200 0 null 194.5296ms
+2025-07-03 21:29:50.270 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5001/api/Contact/GetAllContacts - null null
+2025-07-03 21:29:50.271 +05:30 [INF] CORS policy execution successful.
+2025-07-03 21:29:50.271 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5001/api/Contact/GetAllContacts - 204 null null 0.6846ms
+2025-07-03 21:29:50.274 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5001/api/Contact/GetAllContacts - null null
+2025-07-03 21:29:50.275 +05:30 [INF] CORS policy execution successful.
+2025-07-03 21:29:50.276 +05:30 [INF] Executing endpoint 'Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment)'
+2025-07-03 21:29:50.276 +05:30 [INF] Route matched with {action = "GetAllContacts", controller = "Contact"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Knila.DAL.Models.Contact]] GetAllContacts() on controller Knila_Assessment.Controllers.ContactController (Knila Assessment).
+2025-07-03 21:29:50.363 +05:30 [INF] Executing action method Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment) - Validation state: "Valid"
+2025-07-03 21:29:50.414 +05:30 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[City], [c].[Country], [c].[Email], [c].[FirstName], [c].[LastName], [c].[PhoneNumber], [c].[PostalCode], [c].[State]
+FROM [Contact] AS [c]
+ORDER BY [c].[Id] DESC
+2025-07-03 21:29:50.415 +05:30 [INF] Executed action method Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 51.673ms.
+2025-07-03 21:29:50.416 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Knila.DAL.Models.Contact, Knila.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-03 21:29:50.416 +05:30 [INF] Executed action Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment) in 140.5539ms
+2025-07-03 21:29:50.416 +05:30 [INF] Executed endpoint 'Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment)'
+2025-07-03 21:29:50.417 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5001/api/Contact/GetAllContacts - 200 null application/json; charset=utf-8 142.4876ms
+2025-07-03 21:30:02.909 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5001/api/Contact/AddOrUpdateContact - null null
+2025-07-03 21:30:02.910 +05:30 [INF] CORS policy execution successful.
+2025-07-03 21:30:02.911 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5001/api/Contact/AddOrUpdateContact - 204 null null 1.9855ms
+2025-07-03 21:30:02.916 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Contact/AddOrUpdateContact - application/json 214
+2025-07-03 21:30:02.955 +05:30 [INF] CORS policy execution successful.
+2025-07-03 21:30:02.961 +05:30 [INF] Executing endpoint 'Knila_Assessment.Controllers.ContactController.AddOrUpdateContact (Knila Assessment)'
+2025-07-03 21:30:02.962 +05:30 [INF] Route matched with {action = "AddOrUpdateContact", controller = "Contact"}. Executing controller action with signature System.Threading.Tasks.Task AddOrUpdateContact(Knila.DAL.Models.Contact) on controller Knila_Assessment.Controllers.ContactController (Knila Assessment).
+2025-07-03 21:30:03.017 +05:30 [INF] Executing action method Knila_Assessment.Controllers.ContactController.AddOrUpdateContact (Knila Assessment) - Validation state: "Valid"
+2025-07-03 21:30:03.064 +05:30 [INF] Executed DbCommand (38ms) [Parameters=[@p9='?' (DbType = Int32), @p0='?' (Size = 200), @p1='?' (Size = 100), @p2='?' (Size = 100), @p3='?' (Size = 150), @p4='?' (Size = 100), @p5='?' (Size = 100), @p6='?' (Size = 20), @p7='?' (Size = 20), @p8='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Contact] SET [Address] = @p0, [City] = @p1, [Country] = @p2, [Email] = @p3, [FirstName] = @p4, [LastName] = @p5, [PhoneNumber] = @p6, [PostalCode] = @p7, [State] = @p8
+OUTPUT 1
+WHERE [Id] = @p9;
+2025-07-03 21:30:03.067 +05:30 [INF] Executed action method Knila_Assessment.Controllers.ContactController.AddOrUpdateContact (Knila Assessment), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 49.8445ms.
+2025-07-03 21:30:03.067 +05:30 [INF] Executed action Knila_Assessment.Controllers.ContactController.AddOrUpdateContact (Knila Assessment) in 105.1111ms
+2025-07-03 21:30:03.067 +05:30 [INF] Executed endpoint 'Knila_Assessment.Controllers.ContactController.AddOrUpdateContact (Knila Assessment)'
+2025-07-03 21:30:03.068 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Contact/AddOrUpdateContact - 200 0 null 152.3166ms
+2025-07-03 21:30:03.076 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5001/api/Contact/GetAllContacts - null null
+2025-07-03 21:30:03.076 +05:30 [INF] CORS policy execution successful.
+2025-07-03 21:30:03.077 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5001/api/Contact/GetAllContacts - 204 null null 1.1218ms
+2025-07-03 21:30:03.082 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5001/api/Contact/GetAllContacts - null null
+2025-07-03 21:30:03.082 +05:30 [INF] CORS policy execution successful.
+2025-07-03 21:30:03.084 +05:30 [INF] Executing endpoint 'Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment)'
+2025-07-03 21:30:03.101 +05:30 [INF] Route matched with {action = "GetAllContacts", controller = "Contact"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Knila.DAL.Models.Contact]] GetAllContacts() on controller Knila_Assessment.Controllers.ContactController (Knila Assessment).
+2025-07-03 21:30:03.145 +05:30 [INF] Executing action method Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment) - Validation state: "Valid"
+2025-07-03 21:30:03.150 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[City], [c].[Country], [c].[Email], [c].[FirstName], [c].[LastName], [c].[PhoneNumber], [c].[PostalCode], [c].[State]
+FROM [Contact] AS [c]
+ORDER BY [c].[Id] DESC
+2025-07-03 21:30:03.150 +05:30 [INF] Executed action method Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 5.4414ms.
+2025-07-03 21:30:03.150 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Knila.DAL.Models.Contact, Knila.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-03 21:30:03.151 +05:30 [INF] Executed action Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment) in 49.5839ms
+2025-07-03 21:30:03.151 +05:30 [INF] Executed endpoint 'Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment)'
+2025-07-03 21:30:03.151 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5001/api/Contact/GetAllContacts - 200 null application/json; charset=utf-8 69.7949ms
+2025-07-03 21:30:12.933 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5001/api/Contact/RemoveContacts - null null
+2025-07-03 21:30:12.933 +05:30 [INF] CORS policy execution successful.
+2025-07-03 21:30:12.934 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5001/api/Contact/RemoveContacts - 204 null null 0.8114ms
+2025-07-03 21:30:12.937 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Contact/RemoveContacts - application/json 234
+2025-07-03 21:30:12.938 +05:30 [INF] CORS policy execution successful.
+2025-07-03 21:30:12.940 +05:30 [INF] Executing endpoint 'Knila_Assessment.Controllers.ContactController.RemoveContacts (Knila Assessment)'
+2025-07-03 21:30:12.940 +05:30 [INF] Route matched with {action = "RemoveContacts", controller = "Contact"}. Executing controller action with signature System.Threading.Tasks.Task RemoveContacts(Knila.DAL.Models.Contact[]) on controller Knila_Assessment.Controllers.ContactController (Knila Assessment).
+2025-07-03 21:30:13.017 +05:30 [INF] Executing action method Knila_Assessment.Controllers.ContactController.RemoveContacts (Knila Assessment) - Validation state: "Valid"
+2025-07-03 21:30:13.030 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Contact]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-07-03 21:30:13.030 +05:30 [INF] Executed action method Knila_Assessment.Controllers.ContactController.RemoveContacts (Knila Assessment), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 13.121ms.
+2025-07-03 21:30:13.031 +05:30 [INF] Executed action Knila_Assessment.Controllers.ContactController.RemoveContacts (Knila Assessment) in 89.8695ms
+2025-07-03 21:30:13.031 +05:30 [INF] Executed endpoint 'Knila_Assessment.Controllers.ContactController.RemoveContacts (Knila Assessment)'
+2025-07-03 21:30:13.031 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Contact/RemoveContacts - 200 0 null 93.8372ms
+2025-07-03 21:30:13.036 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5001/api/Contact/GetAllContacts - null null
+2025-07-03 21:30:13.037 +05:30 [INF] CORS policy execution successful.
+2025-07-03 21:30:13.037 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5001/api/Contact/GetAllContacts - 204 null null 0.4264ms
+2025-07-03 21:30:13.040 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5001/api/Contact/GetAllContacts - null null
+2025-07-03 21:30:13.041 +05:30 [INF] CORS policy execution successful.
+2025-07-03 21:30:13.042 +05:30 [INF] Executing endpoint 'Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment)'
+2025-07-03 21:30:13.042 +05:30 [INF] Route matched with {action = "GetAllContacts", controller = "Contact"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Knila.DAL.Models.Contact]] GetAllContacts() on controller Knila_Assessment.Controllers.ContactController (Knila Assessment).
+2025-07-03 21:30:13.082 +05:30 [INF] Executing action method Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment) - Validation state: "Valid"
+2025-07-03 21:30:13.088 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[City], [c].[Country], [c].[Email], [c].[FirstName], [c].[LastName], [c].[PhoneNumber], [c].[PostalCode], [c].[State]
+FROM [Contact] AS [c]
+ORDER BY [c].[Id] DESC
+2025-07-03 21:30:13.095 +05:30 [INF] Executed action method Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 12.8098ms.
+2025-07-03 21:30:13.095 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Knila.DAL.Models.Contact, Knila.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-03 21:30:13.096 +05:30 [INF] Executed action Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment) in 54.5542ms
+2025-07-03 21:30:13.096 +05:30 [INF] Executed endpoint 'Knila_Assessment.Controllers.ContactController.GetAllContacts (Knila Assessment)'
+2025-07-03 21:30:13.097 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5001/api/Contact/GetAllContacts - 200 null application/json; charset=utf-8 56.6721ms

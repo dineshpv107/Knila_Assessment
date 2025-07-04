@@ -1,0 +1,11 @@
+[
+  {
+    "Name": "Knila_API",
+    "Projects": [
+      {
+        "Path": "Knila Assessment\\Knila Assessment.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

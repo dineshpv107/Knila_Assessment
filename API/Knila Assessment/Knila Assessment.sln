@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knila Assessment", "Knila Assessment\Knila Assessment.csproj", "{F146342B-9634-43D5-A252-340A2CF8B4BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knila.BAL", "Knila.BAL\Knila.BAL.csproj", "{40FFBF48-E51B-47B9-B623-552101938BAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knila.DAL", "Knila.DAL\Knila.DAL.csproj", "{624E8310-4035-47FF-85D9-48D7012C8BDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knila.Tests", "Knila.Tests\Knila.Tests.csproj", "{A779EA66-32BA-4DDB-9DC4-053D51834370}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F146342B-9634-43D5-A252-340A2CF8B4BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F146342B-9634-43D5-A252-340A2CF8B4BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F146342B-9634-43D5-A252-340A2CF8B4BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F146342B-9634-43D5-A252-340A2CF8B4BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40FFBF48-E51B-47B9-B623-552101938BAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40FFBF48-E51B-47B9-B623-552101938BAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40FFBF48-E51B-47B9-B623-552101938BAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40FFBF48-E51B-47B9-B623-552101938BAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{624E8310-4035-47FF-85D9-48D7012C8BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{624E8310-4035-47FF-85D9-48D7012C8BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{624E8310-4035-47FF-85D9-48D7012C8BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{624E8310-4035-47FF-85D9-48D7012C8BDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A779EA66-32BA-4DDB-9DC4-053D51834370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A779EA66-32BA-4DDB-9DC4-053D51834370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A779EA66-32BA-4DDB-9DC4-053D51834370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A779EA66-32BA-4DDB-9DC4-053D51834370}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
